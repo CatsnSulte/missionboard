@@ -1,16 +1,24 @@
 %div.container-fluid
-	%div.row
-		%div.col-md-12{ :style => "background-color: red; min-height: 300px;" }
-			%h3 Headbereich
-	%div.row
-		%div.col-md-3{ :style => "background-color: darkseagreen; min-height: 300px;" }
-			%h3 Moodbereich
-		%div.col-md-9
-			%div.row
-				%div.col-md-12{ :style => "background-color: grey; min-height: 150px;" }
-					%h3 Todo
-			%div.row
-				%div.col-md-12{ :style => "background-color: cornsilk; min-height: 150px;" }
-					%h3 Kommentare
+    %div.row
+        %div.col-md-12{ :style => "background-color: red; min-height: 300px;" }
+            %h3 Headbereich
+    %div.row
+        %div.col-md-3{ :style => "background-color: darkseagreen; min-height: 300px;" }
+            %h3 Moodbereich
+        %div.col-md-9
+            %div.row
+                %div.col-md-12{ :style => "background-color: grey; min-height: 150px;" }
+                    %h3 Todo
+            %div.row
+                %div.col-md-12{ :style => "background-color: cornsilk; min-height: 150px;" }
+                    %h3 Kommentare
+                    - 8.times do |x| 
+                        -if x!=4647
+                            %div.col-md-3{ :style => "background-color: grey; min-height: 50px; border-style: solid; margin: 1px;" }
+                                %H4 Kommentar 
+                                %p= x
+                                %p Bodytext durch variable ersetzen
 
+
+                
 
